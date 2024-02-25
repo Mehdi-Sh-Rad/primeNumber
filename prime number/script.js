@@ -6,7 +6,7 @@ function isAvval(number) {
     } else if (number == 0) {
         alert(`${number} عدد اول نمی باشد`)
     } else {
-        for (let i = 2; i <= Math.sqrt(number); i++) {
+        for (let i = 2; i <= Math.ceil(Math.sqrt(number)); i++) {
             if (number % i == 0) {
                 alert(`${number} عدد اول نمی باشد`);
                 break;
